@@ -1,6 +1,10 @@
 class Hash
   def keys_of(*arguments)
     array = []
-    if 
+    map do |key, value|
+      if value = *arguments
+        array << key
+      end
+    end
   end
 end
